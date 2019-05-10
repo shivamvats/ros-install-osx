@@ -1,3 +1,10 @@
+Instructions
+=============
+
+1. A lot of packages downloaded by rosinstall have incorrect CMakeLists. Remove `signals` from `find_package` calls in every CMakeLists.
+2. Refer to https://github.com/robotology/human-dynamics-estimation/issues/93#issuecomment-462284177 for detailed debugging steps.
+
+
 ros-install-osx   [![Build Status](https://travis-ci.org/mikepurvis/ros-install-osx.svg?branch=master)](https://travis-ci.org/mikepurvis/ros-install-osx)
 ===============
 
