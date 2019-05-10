@@ -84,7 +84,7 @@ do_install()
   fi
 
   # Gives us console_bridge, urdfdom, and gtest.
-  brew tap ros/deps
+  brew tap nagakiran/deps
 
   # This tap gives us formulae for Gazebo and its dependencies, including SDF.
   brew tap osrf/simulation
@@ -160,7 +160,7 @@ do_install()
     fi
 
     # Package dependencies.
-    rosdep install --from-paths . --ignore-src --rosdistro ${ROS_DISTRO} -y --as-root pip:no
+    rosdep install --from-paths . --ignore-src --rosdistro ${ROS_DISTRO} -y --as-root pip:no --skip-keys "google-mock"
   popd
 
   # Clean out or create the install directory.
