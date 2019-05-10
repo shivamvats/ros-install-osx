@@ -1,7 +1,7 @@
 Instructions
 =============
 
-1. A lot of packages downloaded by rosinstall have incorrect CMakeLists. Remove `signals` from `find_package` calls in every CMakeLists.
+1. A lot of packages downloaded by rosinstall have incorrect CMakeLists. Remove `signals` in `find_package(Boost COMPONENTS ...)` calls from every such CMakeList.
 2. Refer to https://github.com/robotology/human-dynamics-estimation/issues/93#issuecomment-462284177 for detailed debugging steps.
 
 
